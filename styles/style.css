@@ -1,0 +1,251 @@
+/*
+#F4FA00 yellow
+#345AFA blue
+#D12326 red
+*/
+
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(252, 252, 252);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* navbar */
+.main-navbar{
+    
+    background-color: #131313;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 3 ;
+    
+}
+
+.main-navbar a {
+    float:left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    
+}
+
+.main-navbar a:hover, .dropdown:hover {
+    background: #303030;
+    
+}
+
+.dropdown {
+    float: right;
+    
+}
+.dropdown .dropdown-button {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+}
+.dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #131313;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* header */
+.main-header-div {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 3px solid #ffffff;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+/*background image*/
+.background-image {
+    height: 50%;
+    background-image: url("/images/background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 6px solid #131313;
+}
+
+/*About section*/
+.about-div {
+    margin: 0px;
+    text-align: center;
+    font-size: 16px;
+}
+.about-div h2 {
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    font-size: 48px;
+    color: #131313;
+}
+
+.image-one-div {
+    display: flex;
+    justify-content: center;
+}
+.image-one-div p {
+    margin-left: 20%;
+    margin-top: 0px;
+    max-width: 400px;
+    text-align: left;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    padding: 40px;
+}
+.image-one {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    max-width: 480px;
+}
+
+.image-two-div {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.image-two-div p {
+    margin-top: 0px;
+    max-width: 400px;
+    text-align: left;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    
+}
+.image-two {
+    margin-left: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    max-width: 480px;
+}
+
+/*------------------------------ layout styles -----------------------------------*/
+.center-text-blackbg {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.center-text-blackbg p {
+    text-align: center;
+    min-width: 60%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    font-size: 24px;
+    max-width: 70%;
+
+}
+/*------------------------------ news page -----------------------------------*/
+
+.news-div {
+    margin: 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.news-div h2 {
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+}
+
+/*------------------------------ contact page -----------------------------------*/
+
+.contact-div {
+    margin: 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.contact-div h2 {
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+/*------------------------------ calender page -----------------------------------*/
+
+.calender-div {
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+/*------------------------------ darts page -----------------------------------*/
+
+.darts-background-image {
+    height: 50%;
+    background-image: url("/images/darts-background2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 6px solid #131313;
+}
+
+/*------------------------------ bingo page -----------------------------------*/
+
+.bingo-background-image {
+    height: 50%;
+    background-image: url("/images/bingo-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 6px solid #131313;
+}
+
+/*------------------------------ cards page -----------------------------------*/
+
+.cards-background-image {
+    height: 50%;
+    background-image: url("/images/cards-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 6px solid #131313;
+}
